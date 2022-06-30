@@ -3,17 +3,50 @@
 <head>
 	<meta charset="utf-8">
 	<script>
-		// TODO: create a handler
+		function => {
+			let actions = {
+				"google": "https://www.google.com/search", 
+				"duckDuckGo": "https://duckduckgo.com/",
+				"bing": "https://www.bing.com/search",
+				"ask": "https://www.ask.com/web"
+		}
+		document.getElementById()
+			if(click === "on")submit.action = searchEngine.option
+
+			let selectedEngine =  document.querySelector('input[name=engine]:checked');
+            let action = actions[selectedEngine.value];
+            form.setAttribute('action', action);
+		}
+		
     window.addEventListener("load", function(){
         // TODO: register the handler
+		let gSearch = document.getElementById("googleSearch");
+		gSearch.addEventListener("click", function(event)	{
+			if(click === "on")submit.action = searchEngine.option
+
+		});
     });
 	</script>
 </head>
 
 <body>
 
-	<form id="searchForm">
-    <!-- TODO: add form elements -->
+	<form id="searchForm" action = "" method = "POST" 
+		<label>Your Question: <input type="text" value="q" /></label>
+		Search Engine Options:
+		<label>Google<input type="radio" value="google" name="engine" id="googleSearch" action="" /></label>
+		<label>DuckDuckGo<input type="radio" value="duckDuckGo" name="engine" id="duckSearch" /></label>
+		<label>Bing<input type="radio" value="bing" name="engine" id="bingSearch" /></label>
+		<label>Ask<input type="radio" value="ask" name="engine" id="askSearch" /></label>	
+		<button onclick="">Go!</button>
 	</form>
 
 </body>
+
+<!-- Search Engine Options¶ 
+Label 	Value 	Search URL
+Google 	google 	https://www.google.com/search
+DuckDuckGo 	duckDuckGo 	https://duckduckgo.com/
+Bing 	bing 	https://www.bing.com/search
+Ask 	ask 	https://www.ask.com/web
+
